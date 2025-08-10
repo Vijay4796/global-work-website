@@ -165,3 +165,48 @@ footer {
         font-size: 24px;
     }
 }
+
+/* About Section */
+.about {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 28px;
+    color: #004080;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.about h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ff6600;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 24px;
+    }
+
+    .about p {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+}
